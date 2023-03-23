@@ -1,0 +1,329 @@
+body{
+    margin:0;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a{text-decoration: none;}
+
+.container{
+    width:1170px;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+.top-wrapper{
+   padding:180px 0 100px 0;
+   background-image: url(https://img.freepik.com/free-photo/tea-plantation-south-korea-bright-green-bushes-are-green-tea_1101-2475.jpg?w=1480);
+   background-size: cover;
+   color:#fff;
+   text-align: center;
+   position: relative;
+}
+
+.top-wrapper::before{
+    content:"";
+    position:absolute;
+    top:0; bottom:0;
+    left:0; right:0;
+    background: black;
+    opacity: 0.4;
+}
+
+.top-wrapper h1{
+    opacity:0.7;
+    font-size: 45px;
+    letter-spacing:5px;
+}
+
+.top-wrapper p{
+    font-size: 25px;
+    color:#b4eb90;
+    opacity: 0.9;
+}
+
+.btn-wrapper{
+    margin:20px 0;
+}
+
+.btn-wrapper p{
+    margin:10px 0p;
+}
+
+.signup{
+    background-color: #239b76 ;
+}
+
+.facebook{
+    background-color:#3b5998 ;
+}
+
+.twitter{
+    background-color: #55acee;
+}
+
+.btn{
+    padding: 8px 24px;
+    color:#fff;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.fa-brands{
+    margin-right: 5px;
+   
+}
+
+header{
+    height:65px;
+    width:100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
+
+
+header span{
+    display: none !important;
+    
+}
+
+.logo{
+    width:124px;
+    height: 50px;
+    margin-top: 7px;
+}
+
+.header-left{
+    float:left;
+}
+
+.header-right{
+    display: flex;
+    flex-wrap:wrap;
+    float:right;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition:all 0.5s;
+    margin-right:25px;
+}
+
+.header-right a:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.header-right a{
+    line-height:65px;
+    padding:0 25px;
+    color:#fff;
+    display: block;
+    flex:10%;
+}
+
+.lesson-wrapper{
+    height:500px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.heading{
+    padding-top:60px;
+    padding-bottom: 30px;
+    color:#5f5d60;
+}
+
+.heading h2{
+    font-weight:noprmal;
+}
+
+.lessons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lesson{
+    flex:25%;
+}
+
+.lesson-icon{
+    position:relative;
+}
+
+.lesson-icon p{
+    position:absolute;
+    margin:0;
+    font-family: "Hiragino Kaku Gothic ProN";
+    top: 90px;
+    width: 100%;
+    color: white;
+}
+
+a{text-decoration: none;}
+
+.container{
+    width:1170px;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+.top-wrapper{
+   padding:180px 0 100px 0;
+   background-image: url(https://img.freepik.com/free-photo/tea-plantation-south-korea-bright-green-bushes-are-green-tea_1101-2475.jpg?w=1480);
+   background-size: cover;
+   color:#fff;
+   text-align: center;
+   position: relative;
+}
+
+.top-wrapper::before{
+    content:"";
+    position:absolute;
+    top:0; bottom:0;
+    left:0; right:0;
+    background: black;
+    opacity: 0;
+    top:90px;
+    width:100%;
+    color:#fff;
+}
+
+.text-contents{
+    width:80%;
+    display: inline-block;
+    margin-top:12px;
+    color:#b3aeb5;
+}
+
+.heading h3{
+    font-weight: normal;
+}
+
+.message-wrapper{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.message{
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor:pointer;
+    box-shadow:0 7px #1a7940;
+    display: inline-block;
+}
+
+
+.message:active{
+    position:realtive;
+    top:7px;
+    box-shadow: none;
+}
+
+footer{
+    padding-top:30px;
+}
+
+footer img{
+    width:200px;
+    height:70px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:1000px){
+    .container{
+        width:100%;
+    }
+
+    .header-right{
+        display:none;
+        float:right;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition:all 0.5s;
+        margin-right:25px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .lesson-wrapper{
+        height:830px;
+    }
+
+    .lesson{
+      flex:50%;
+    }
+
+    footer{
+        text-align:center;
+    }
+
+    .top-wrapper h1{
+        font-size: 32px;
+    }
+
+    .heading h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:670px){
+ 
+ .contianer{
+    text-align: left;
+    width: 60%;;
+ }
+
+ .container h1{
+    font-size: 30px;
+ }
+
+ .container p{
+    font-size: 15px;
+ }
+
+ .btn{
+    width:85%;
+    height:45px;
+ }
+
+ .btn-wrapper a{
+    display: block;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 30px;
+ }
+
+
+ .btn-wrapper p{
+    display: block;
+    text-align:center;
+    font-size: 30px;
+ }
+
+ .facebook{
+    margin-bottom:20px;
+ }
+
+ .twitter{margin-right:100px;}
+
+ .lesson-wrapper{
+    height:1460px;
+ }
+
+ .lesson{
+    flex: 100%;
+ }
+
+ .message {
+    width:50%;
+    font-size:30px;
+ }
+
+}
