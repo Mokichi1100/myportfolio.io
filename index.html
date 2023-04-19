@@ -4,97 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://mokichi1100.github.io/myportfolio.io/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<!-- TopButton Js Html -->
+<script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('btn-scroll-to-top');
+      btn.style.display = (window.pageYOffset > 100) ? 'block' : 'none';
+    });
+    </script>
+
+<button onclick="scrollToTop()" id="btn-scroll-to-top" title="ページトップへ"><p><i class="arrow up"></i></p></button>
+<!-- Topbutton -->
+
+
 <body>
+
     <header>
+        <div class="header" id="aria-1">
+        </div>
+        <div class="text">
+            <h1>My Website</h1>
+            <p>A <b>responsive</b> website created by me.</p>
+        </div>
+    </header>
+    
+    <div class="navbar" id="page-link">
+        <a href="#aria-1" class="active">Home</a>
+        <!-- <a href="#">Link</a> -->
+        <a href="#aria-2">Works</a>
+        <a href="#aria-3">About</a>
+        <a href="#aria-4" class="active2">Contact</a>
+    </div>
+
+    <div class="main">
         <div class="container">
-
-
-                <div class="header-left"><img class="logo "src="https://p.kindpng.com/picc/s/238-2384314_circle-hd-png-download.png" alt=""></div>
-            </div>
             
-            <span class="fa fa-bars menu-icon"></span>
-            <div class="header-right">
-                <a href="#">Lesson</a>
-                <a href="#">SignUp</a>
-                <a href="#">Login</a>
+            <div class="top-wrapper">
+                <!-- <div class="box"> -->
+                    <h1>Lorem Ipsum</h1>
+                    <h1>Lorem Ipsum is simply dummy text </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>            
+                    <!-- </div> -->
+                    
             </div>
-       
-        </header>
 
-    <div class="top-wrapper">
-        <div class="container">
-            <h1>Lorem Ipsum </h1>
-            <h1>Lorem Ipsum is simply dummy text </h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-        </div>
+                
+            <!-- Works -->       
+        <div class="myworks" id="aria-2">
+                    <div class="heading">
+                        <h2>Works</h2>
+                    </div>
 
-        <div class="btn-wrapper">
+                <div class="works">        
+                    <article>
+                        <img src="https://images.pexels.com/users/avatars/3245/nick-collins-162.jpeg?auto=compress" alt="">
+                            <h2 class="article-title">Lorem Ipsum</h2>
+                            <div class="readmore"><a href="#">READ MORE</a></div>
+                    </article>
+                    
+                    <article>
+                        <img src="https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?cs=srgb" alt="">
+                        <h2 class="article-title">Lorem Ipsum</h2>
+                        <div class="readmore"><a href="#">READ MORE</a></div>
+                    </article>
+                    
+                    <article>
+                        <img src="https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        <h2 class="article-title">Lorem Ipsum</h2>
+                        <div class="readmore"><a href="#">READ MORE</a></div>
+                    </article>
+                    
+                    
+                    <article>
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?cs=srgb&dl=pexels-steve-johnson-1266808.jpg&fm=jpg" alt="">
+                        <h2 class="article-title">Lorem Ipsum</h2>
+                        <div class="readmore"><a href="#">READ MORE</a></div>
+                    </article>
+                    
+                    <article>
+                        <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        <h2 class="article-title">Lorem Ipsum</h2>
+                        <div class="readmore"><a href="#">READ MORE</a></div>
+                    </article>
+                    
+                    <article>
+                        <img src="https://images.pexels.com/photos/1212693/pexels-photo-1212693.jpeg?cs=srgb&dl=pexels-katie-burandt-1212693.jpg&fm=jpg" alt="">
+                        <h2 class="article-title">Lorem Ipsum</h2>
+                        <div class="readmore"><a href="#">READ MORE</a></div>
+                    </article>
+                </div> 
+            </div>
+        </div>       
+        <!-- Works -->
+
+        <!-- About -->
+        <div class="aboutme" id="aria-3">
             <div class="container">
-                <a href="#" class="btn signup">SignUp</a>
-                <p>or</p>
-                <a href="#" class="btn facebook"><span class="fa-brands fa-facebook"></span>Facebook</a>
-                <a href="#" class="btn twitter"><span class="fa-brands fa-twitter"></span>Twitter</a>
-            </div>
-        </div>
-    </div>
+                <h1>About me</h1>
+                <div class="article">
+                    <div class="imgbox">
+                        <img src="https://media.istockphoto.com/id/1250988021/vector/avatar-men-icon-on-a-white-background.jpg?s=170667a&w=0&k=20&c=MaX8vCwx4uuCKtY7wDBDWSY4n9_0j0qs3avddOK7M30=" alt="">
+                    </div>
 
-    <div class="lesson-wrapper">
-        <div class="container">
-            <div class="heading">
-                <h2>Lorem Ipsum is simply dummy texty</h2>
-            </div>
-            <div class="lessons">
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/html.png" alt="">
-                        <p>Lorem Ipsum</p>
-                    </div>
-                    <p class="text-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/jQuery.png" alt="">
-                        <p>Lorem Ipsum</p>
-                    </div>
-                    <p class="text-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/ruby.png" alt="">
-                        <p>Lorem Ipsum</p>
-                    </div>
-                    <p class="text-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="https://prog-8.com/images/html/advanced/php.png" alt="">
-                        <p>Lorem Ipsum</p>
-                    </div>
-                    <p class="text-contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                    <div class="line"></div>
 
-    <div class="message-wrapper">
-        <div class="container">
-            <div class="heading">
-                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h2>
-                <h3>Lorem Ipsum has been the industry's standard dummy text</h3>
+                    <div class="text-box">
+                        <p class="text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <br>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                            content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                            Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                    </div>
+                </div>
             </div>
-            <span class="btn message">Button</span>
         </div>
-    </div>
+        <!-- About -->
 
-    <footer>
-        <div class="container">
-            <img src="https://p.kindpng.com/picc/s/238-2384305_portfolio-text-png-transparent-png.png" alt="">
+        <!-- Contact -->
+        <div class="contact" id="aria-4">
+            <div class="container">
+                    <h2>Contact</h2>
+                <form>
+                    <div class="input-container">
+                        <i class="fa-regular fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Name">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa-regular fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Mail Address">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa-sharp fa-solid fa-tty icon"></i>
+                        <input class="input-field" type="text" placeholder="Phone Number">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa-regular fa-message icon2"></i>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="  Message" style="width:100%;" height="170px"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Sent</button>
+                </form>
+            </div>
         </div>
-    </footer>
+        <!-- Contact -->
+        
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2023 my.copylink</p>
+    </div>
+    <!--Footer  -->
+    <!-- header scroll -->
+    <script>
+       $(function() {
+    // スムーススクロールの速度を調整する変数
+    var scrollSpeed = 300; // 変数の値を低くすることでスクロール速度が早まる。
+
+    // ページ内リンクをクリックしたときにスクロールさせる処理
+    $(document).on('click', 'a[href^="#"]', function(event) {
+      event.preventDefault();
+
+      var target = $(this.hash);
+
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, scrollSpeed);
+      }
+    });
+  });
+    </script>
+
+    
+    <!-- header scroll -->
 </body>
 </html>
